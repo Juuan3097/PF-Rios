@@ -3,7 +3,7 @@
     margin: 0;
     font-family: sans-serif;
     text-decoration: none;
-    /* vertical-align: baseline; */
+    vertical-align: baseline;
     max-width: 100%;
     box-sizing: content-box;
     /* overflow-x: hidden; */
@@ -12,6 +12,7 @@
 body{
     /* height: 100vh; */
     min-height: 100%;
+    margin:0;
 }
 
 html{
@@ -114,6 +115,17 @@ h1{
     border: 1px solid grey;
 }
 
+.boton-contactanos{
+    background-color: #ac00e6;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 5px;
+    border: 0px;
+    cursor: pointer;
+    
+
+}
+
 /*Section cards*/
 
 .cards{
@@ -165,7 +177,7 @@ h1{
     align-items: center; 
     margin-top: 150px ;
     margin-bottom: 50px;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .astrologia{
@@ -206,6 +218,7 @@ footer{
     color: white;
     background-color: black;
     line-height: 50px;
+    margin-top: 50px;
 }
 
 .row{
@@ -215,6 +228,67 @@ footer{
     /* flex-direction: column; */
 }
 
+/*CONTACTO*/
+
+.formulario{
+    /* position: relative;
+    left: 30%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #cfcf96;
+    width: 500px;
+    height: 600px;
+    margin: auto;
+    margin-top: 150px;
+    /* padding-left: 100px;
+    padding-right: 100px; */
+    border: 2px solid grey;
+
+}
+
+.container-form{
+    display: flex;
+    flex-direction: column;
+    margin-right: 25px;
+}
+
+.boton-contacto{
+    position: relative;
+    left: 65px;
+    bottom: 8px;
+    width: 230px;
+    height: 1.5rem;
+    background-color: #ac00e6;
+    border: 0px;
+    border-radius: 5px;
+}
+
+#name, #apellido, #tel, #email, #mensaje, .btn-contact{
+    width: 225px;
+    margin: 10px;
+    
+}
+
+#name, #apellido{
+    position: relative;
+    left: 3px;
+}
+
+#email{
+    position: relative;
+    left: 20px;
+}
+
+.areaText{
+    vertical-align: top;
+}
+
+.contactForm{
+    text-align: center;
+    margin-bottom: 25px;
+}
 
 /*RESPONSIVE*/
 
@@ -237,3 +311,73 @@ footer{
                 flex-grow: unset;
             }
         }
+
+/*TESTIMONIOS*/
+
+.container-t{
+    margin-top: 50px;
+}
+
+.card-testimonios{
+    text-align: center;
+    padding: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: solid black 1px;
+    margin-bottom: 50px;
+}
+
+@media screen and (min-width: 992px) {
+    .container-t {
+        display: grid;
+        height: 1600px;
+        row-gap: 150px;
+
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 400px 400px 400px;
+
+        grid-template-areas: 
+        "cero uno uno"
+        "dos dos tres"
+        "cuatro cinco cinco"
+        ;
+      }
+      .cero{
+        grid-area: cero;
+        height: 400px;
+        background-image: linear-gradient(to left, black , grey,black);
+        color: black;
+      }
+      .uno{
+        grid-area: uno;
+        height: 400px;
+        background-image: linear-gradient(to left, black , purple,black);
+        color: white;
+      }
+      .dos{
+        grid-area: dos;
+        height: 400px;
+        background-image: linear-gradient(to left, black , purple,black);
+        color: white;
+      }
+      .tres{
+        grid-area: tres;
+        height: 400px;
+        background-image: linear-gradient(to left, black , grey,black);
+        color: black;
+        
+      }
+
+      .cuatro{
+        grid-area: cuatro;
+        height: 400px;
+        background-image: linear-gradient(to left, black , grey,black);
+        color: black;
+      }
+      .cinco{
+        grid-area: cinco;
+        height: 400px;
+        background-image: linear-gradient(to left, black , purple,black);
+        color: white;
+      }
+    }
