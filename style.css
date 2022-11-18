@@ -271,6 +271,7 @@ transform: scale(1.1);
     border: 1px solid gray;
     width: 80%;
     height: 60%;
+    min-height: 400px;
     /* background-color: #4f4757; */
     background-image: linear-gradient(to left, black , purple,black);
     text-align: center;
@@ -411,37 +412,68 @@ footer{
               }
             }
 
-            @media screen and (max-width: 360px) {
-                .astrologia {
-                    height: 825px;
+            /*Libra. el signo del daño*/
+            @media screen and (max-width: 245px) and (min-width: 0px) {
+                .astrologiaLibra {
+                    min-height: 1200px;
                   }
                 }
 
-             @media screen and (max-width: 360px) {
-                .contenedorA {
-                    height: 850px;
+             @media screen and (max-width: 360px) and (min-width: 0px) {
+                .contenedorALibra {
+                    min-height: 1000px;
+                    /* width: 95%; */
+
                     }
                 }
-
-            @media screen and (max-width: 550px) {
-                .astrologia {
-                    height: 50rem;
-                    margin-bottom: 100px;
+            @media screen and (max-width: 360px) and (min-width: 0px) {
+                .astrologiaLibra {
+                    min-height: 500px;
                     }
                 }
     
-             @media screen and (max-width: 550px) {
+            @media screen and (max-width: 360px) and (min-width: 0px) {
                 .contenedorA {
-                    height: 700px;
+                    min-height: 900px;
+                       /* width: 95%; */
+    
                     }
                 }
 
+            /* Cards astrologia*/
 
-            @media screen and (max-width: 992px) {
+            @media screen and (max-width: 360px) and (min-width: 0px) {
                 .contenedorA {
-                    margin-bottom: 80px;
-                  }
+                    min-height: 1000px;
+                       /* width: 95%; */
+    
+                    }
                 }
+
+            @media screen and (max-width: 360px) and (min-width: 0px) {
+                .astrologia {
+                   min-height: 900px;
+                   margin-bottom: 80px;
+                   /* width: 95%; */
+                    }
+                }
+
+            @media screen and (max-width: 560px) and (min-width: 360px) {
+                .contenedorA {
+                    min-height: 850px;
+                    /* width: 95%; */
+    
+                    }
+                }
+    
+            @media screen and (max-width: 560px) and (min-width: 360px) {
+                .astrologia {
+                    min-height: 850px;
+                    margin-bottom: 80px;
+                    /* width: 95%; */
+                    }
+                }
+    
         
 /*TESTIMONIOS*/
 
