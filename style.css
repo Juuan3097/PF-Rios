@@ -256,6 +256,19 @@ transform: scale(1.1);
 
 }
 
+.astrologiaLibra{
+    border: 1px solid gray;
+    width: 80%;
+    height: 60%;
+    /* background-color: #4f4757; */
+    background-image: linear-gradient(to left, black , purple,black);
+    text-align: center;
+    padding-top: 80px; 
+    color: white;
+    font-size:13px ;
+
+}
+
 .libra{
     background-color: orange;
     color: white;
