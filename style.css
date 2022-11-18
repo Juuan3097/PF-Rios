@@ -379,6 +379,20 @@ footer{
             }
         }
 
+        @media screen and (max-width: 992px) {
+            .astrologia {
+                    display: flex;
+                    flex-direction: column;
+                    height: 95%;
+              }
+            }
+
+            @media screen and (min-width: 992px) {
+                .row {
+                    margin-bottom: 80px;
+                  }
+                }
+        
 /*TESTIMONIOS*/
 
 .container-t{
