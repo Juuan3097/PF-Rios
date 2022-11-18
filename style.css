@@ -142,17 +142,17 @@ h1{
     margin-bottom: 50px;
     transition: 0.2s;
     animation-name: LeftToRightTwo;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
     animation-timing-function: linear;
     animation-iteration-count: 1;
     }
 
 @keyframes LeftToRightTwo{
     0%{
-        transform: translateX(-500px);
+        transform: translateX(-900px);
     }
     50%{
-        transform: translateX(-500px);
+        transform: translateX(-900px);
     }
     100%{
         transform: translateX(0px);
