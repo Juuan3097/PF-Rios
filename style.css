@@ -37,6 +37,7 @@ color: white;
 
 .navbar-color{
     background-color:#ac00e6 ;
+    z-index: 1;
     
 }
 
