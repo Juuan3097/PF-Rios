@@ -73,7 +73,41 @@ color: white;
     color: white;
 }
 
+.mainText{
+    animation-name: rightToLeft;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+}
 
+@keyframes rightToLeft{
+    0%{
+        transform: translateX(-500px);
+    }
+    100%{
+        transform: translateX(0px)
+    }
+
+}
+
+.contentText{
+    animation-name: leftToRight;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+@keyframes leftToRight{
+    0%{
+        overflow: hidden;
+    }
+    50%{
+        transform: translateX(500px);
+    }
+    100%{
+        transform: translateX(0px)
+    }
+}
 
 main > div > p{
     color: white;
@@ -85,7 +119,7 @@ main > div > h1{
     margin-top: 150px;
 }
 h1{
-    color: #d8d8d8;
+    /* color: #d8d8d8; */
     font-size: 1em;
     margin-bottom: 60px;
     /* padding-left: 200px;
@@ -106,7 +140,32 @@ h1{
     cursor: pointer;
     margin-top: 80px;
     margin-bottom: 50px;
+    transition: 0.2s;
+    animation-name: LeftToRightTwo;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
     }
+
+@keyframes LeftToRightTwo{
+    0%{
+        transform: translateX(-500px);
+    }
+    50%{
+        transform: translateX(-500px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+
+}
+
+.contactanos:hover, .mas:hover{
+    background-color: orange;
+    transform: scale(1.1);
+}
+
+
     
 .mas{
     font-size: 15px;
@@ -150,12 +209,15 @@ h1{
     color: white;
     margin-top: 100px;
     text-align: center;
+    transition: all 1s;
     /* margin-left: 15px;
     margin-right: 0px; */
     /* box-sizing: content-box; */
 }
 
-
+.card:hover{
+transform: scale(1.1);
+}
 
 .card-text{
     margin-top: 30px;
@@ -206,6 +268,10 @@ h1{
     /* margin-top: 25px; */
     border: 2px solid gray;
     font-weight: 500;
+}
+
+.libra:hover{
+    filter: brightness(110%);
 }
 
 .astrologiaTexto{
@@ -327,6 +393,13 @@ footer{
     margin-bottom: 50px;
 }
 
+.cero, .dos, .cuatro{
+    background-image: linear-gradient(to left, black , grey,black);
+}
+
+.uno, .tres, .cinco{
+    background-image: linear-gradient(to left, black , purple,black);
+}
 @media screen and (min-width: 992px) {
     .container-t {
         display: grid;
@@ -345,25 +418,21 @@ footer{
       .cero{
         grid-area: cero;
         height: 400px;
-        background-image: linear-gradient(to left, black , grey,black);
         color: black;
       }
       .uno{
         grid-area: uno;
         height: 400px;
-        background-image: linear-gradient(to left, black , purple,black);
         color: white;
       }
       .dos{
         grid-area: dos;
         height: 400px;
-        background-image: linear-gradient(to left, black , purple,black);
         color: white;
       }
       .tres{
         grid-area: tres;
         height: 400px;
-        background-image: linear-gradient(to left, black , grey,black);
         color: black;
         
       }
@@ -371,13 +440,14 @@ footer{
       .cuatro{
         grid-area: cuatro;
         height: 400px;
-        background-image: linear-gradient(to left, black , grey,black);
         color: black;
       }
       .cinco{
         grid-area: cinco;
         height: 400px;
-        background-image: linear-gradient(to left, black , purple,black);
         color: white;
+      }
+      .cards{
+        margin-left: 88px;
       }
     }
