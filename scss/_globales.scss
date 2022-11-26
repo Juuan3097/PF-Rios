@@ -1,0 +1,210 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+    vertical-align: baseline;
+    max-width: 100%;
+    box-sizing: content-box;
+    /* overflow-x: hidden; */
+}
+
+body{
+    /* height: 100vh; */
+    min-height: 100%;
+    margin:0;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+header{
+    height: 90px;
+    width: 100%;
+    background-color: $color-general;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap:nowrap; */
+}
+
+
+.navbar-light .navbar-nav .nav-link{
+color: white;
+}
+
+
+.navbar-color{
+    background-color:$color-general ;
+    z-index: 1;
+    
+}
+
+.navbar{
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar-nav{
+    margin-right: 20px;
+
+}
+
+
+.nav-item{
+    color: white !important;
+}
+
+@mixin boton-general {
+    background-color: $color-general;
+    border-radius: 5px;
+    border: 1px solid grey;
+    width: 6rem;
+    height: 2rem;
+    cursor: pointer;
+    color: white;
+    
+}
+
+/*Card Atrologia, tarot y reiki*/
+
+@mixin card-general {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 150px ;
+    margin-bottom: 50px;
+    /* text-align: center; */
+}
+
+@mixin contenido-card{
+    border: 1px solid gray;
+    width: 80%;
+    height: 68%;
+    /* background-color: #4f4757; */
+    background-image: linear-gradient(to left, black , purple,black);
+    text-align: center;
+    padding-top: 80px; 
+    color: white;
+    font-size:13px ;
+}
+
+/*Card Astrologia, Tarot y Reiki*/
+
+.boton-contactanos{
+    @include boton-general;
+}
+
+.contenedorA{
+    @include card-general;
+}
+
+.astrologia{
+    @include contenido-card;
+}
+
+/*Footer*/
+footer{
+    height: 50px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    line-height: 50px;
+    margin-top: 50px;
+}
+
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 992px) {
+    .row {
+            display: flex;
+            flex-direction: column;
+      }
+    }
+
+    @media screen and (min-width: 992px) {
+            .card-tarot{
+                margin-left: 90px;
+                margin-right: 90px;
+            }
+            .cards{
+                margin-left: 60px;
+            }
+            .navbar-collapse{
+                flex-grow: unset;
+            }
+        }
+
+        @media screen and (max-width: 992px) {
+            .astrologia {
+                    display: flex;
+                    flex-direction: column;
+                    height: 95%;
+              }
+            }
+
+            /*Libra. el signo del daño*/
+            @media screen and (max-width: 245px) and (min-width: 0px) {
+                .astrologiaLibra {
+                    min-height: 1200px;
+                  }
+                }
+
+             @media screen and (max-width: 360px) and (min-width: 0px) {
+                .contenedorALibra {
+                    min-height: 1000px;
+                    /* width: 95%; */
+
+                    }
+                }
+            @media screen and (max-width: 360px) and (min-width: 0px) {
+                .astrologiaLibra {
+                    min-height: 500px;
+                    }
+                }
+    
+            @media screen and (max-width: 360px) and (min-width: 0px) {
+                .contenedorA {
+                    min-height: 900px;
+                       /* width: 95%; */
+    
+                    }
+                }
+
+            /* Cards astrologia*/
+
+            @media screen and (max-width: 360px) and (min-width: 0px) {
+                .contenedorA {
+                    min-height: 1000px;
+                       /* width: 95%; */
+    
+                    }
+                }
+
+            @media screen and (max-width: 360px) and (min-width: 0px) {
+                .astrologia {
+                   min-height: 900px;
+                   margin-bottom: 80px;
+                   /* width: 95%; */
+                    }
+                }
+
+            @media screen and (max-width: 560px) and (min-width: 360px) {
+                .contenedorA {
+                    min-height: 850px;
+                    /* width: 95%; */
+    
+                    }
+                }
+    
+            @media screen and (max-width: 560px) and (min-width: 360px) {
+                .astrologia {
+                    min-height: 850px;
+                    margin-bottom: 80px;
+                    /* width: 95%; */
+                    }
+                }

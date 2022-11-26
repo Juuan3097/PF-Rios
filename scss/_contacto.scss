@@ -1,0 +1,65 @@
+/*CONTACTO*/
+
+.formulario{
+    /* position: relative;
+    left: 30%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #cfcf96;
+    width: 500px;
+    height: 600px;
+    margin: auto;
+    margin-top: 150px;
+    /* padding-left: 100px;
+    padding-right: 100px; */
+    border: 2px solid grey;
+
+}
+
+.container-form{
+    display: flex;
+    flex-direction: column;
+    margin-right: 25px;
+}
+
+.boton-contacto{
+    position: relative;
+    left: 73.5px;
+    bottom: 8px;
+    width: 230px;
+    height: 1.5rem;
+    background-color: $color-general;
+    border: 0px;
+    border-radius: 5px;
+}
+
+#name, #apellido, #tel, #email, #mensaje, .btn-contact{
+    width: 225px;
+    margin: 10px;
+    
+}
+
+#name, #apellido{
+    position: relative;
+    left: 3px;
+}
+
+#email{
+    position: relative;
+    left: 20px;
+}
+
+.areaText{
+    vertical-align: top;
+}
+
+.container-form:first-child h4{
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: bold;
+    // color: white;
+    position: relative;
+    left: 30px;    
+}

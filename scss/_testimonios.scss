@@ -1,0 +1,74 @@
+/*TESTIMONIOS*/
+
+.container-t{
+    margin-top: 50px;
+}
+
+.card-testimonios{
+    text-align: center;
+    padding: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: solid black 1px;
+    margin-bottom: 50px;
+}
+
+.card-testimonios:nth-of-type(2n) {
+    background-image: linear-gradient(to left, black , grey,black);
+}
+
+.card-testimonios:nth-of-type(2n+1){
+    background-image: linear-gradient(to left, black , purple,black);
+}
+
+@media screen and (min-width: 992px) {
+    .container-t {
+        display: grid;
+        height: 1600px;
+        row-gap: 150px;
+
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 400px 400px 400px;
+
+        grid-template-areas: 
+        "cero uno uno"
+        "dos dos tres"
+        "cuatro cinco cinco"
+        ;
+      }
+      .cero{
+        grid-area: cero;
+        height: 400px;
+        color: black;
+      }
+      .uno{
+        grid-area: uno;
+        height: 400px;
+        color: white;
+      }
+      .dos{
+        grid-area: dos;
+        height: 400px;
+        color: white;
+      }
+      .tres{
+        grid-area: tres;
+        height: 400px;
+        color: black;
+        
+      }
+
+      .cuatro{
+        grid-area: cuatro;
+        height: 400px;
+        color: black;
+      }
+      .cinco{
+        grid-area: cinco;
+        height: 400px;
+        color: white;
+      }
+      .cards{
+        margin-left: 88px;
+      }
+    }
