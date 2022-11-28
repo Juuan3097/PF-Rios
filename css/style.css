@@ -53,6 +53,9 @@ header {
   height: 2rem;
   cursor: pointer;
   color: white; }
+  .boton-contactanos:hover {
+    background-color: orange;
+    transform: scale(1.1); }
 
 .contenedorA {
   width: 100%;
@@ -63,17 +66,16 @@ header {
   margin-top: 150px;
   margin-bottom: 50px;
   /* text-align: center; */ }
-
-.astrologia {
-  border: 1px solid gray;
-  width: 80%;
-  height: 68%;
-  /* background-color: #4f4757; */
-  background-image: linear-gradient(to left, black, purple, black);
-  text-align: center;
-  padding-top: 80px;
-  color: white;
-  font-size: 13px; }
+  .contenedorA .astrologia {
+    border: 1px solid gray;
+    width: 80%;
+    height: 68%;
+    /* background-color: #4f4757; */
+    background-image: linear-gradient(to left, black, purple, black);
+    text-align: center;
+    padding-top: 80px;
+    color: white;
+    font-size: 13px; }
 
 /*Footer*/
 footer {
@@ -184,13 +186,13 @@ footer {
   100% {
     transform: translateX(0px); } }
 
-main > div > p {
+main > div p {
   color: white;
   padding-left: 15px;
   padding-right: 15px;
   text-align: center; }
 
-main > div > h1 {
+main > div h1 {
   margin-top: 150px; }
 
 h1 {
@@ -221,6 +223,9 @@ h1 {
   animation-duration: 2s;
   animation-timing-function: linear;
   animation-iteration-count: 1; }
+  .contactanos:hover {
+    background-color: orange;
+    transform: scale(1.1); }
 
 @keyframes LeftToRightTwo {
   0% {
@@ -230,15 +235,14 @@ h1 {
   100% {
     transform: translateX(0px); } }
 
-.contactanos:hover, .mas:hover {
-  background-color: orange;
-  transform: scale(1.1); }
-
 .mas {
   font-size: 15px;
   background-color: #ac00e6;
   border-radius: 5px;
   border: 1px solid grey; }
+  .mas:hover {
+    background-color: orange;
+    transform: scale(1.1); }
 
 /*Section cards*/
 .cards {
@@ -264,9 +268,8 @@ h1 {
   /* margin-left: 15px;
     margin-right: 0px; */
   /* box-sizing: content-box; */ }
-
-.card:hover {
-  transform: scale(1.1); }
+  .card:hover {
+    transform: scale(1.1); }
 
 .card-text {
   margin-top: 30px;
@@ -319,9 +322,8 @@ h1 {
   /* margin-top: 25px; */
   border: 2px solid gray;
   font-weight: 500; }
-
-.libra:hover {
-  filter: brightness(110%); }
+  .libra:hover {
+    filter: brightness(110%); }
 
 .astrologiaTexto {
   margin: 50px; }
@@ -383,14 +385,13 @@ h1 {
 /*TESTIMONIOS*/
 .container-t {
   margin-top: 50px; }
-
-.card-testimonios {
-  text-align: center;
-  padding: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
-  border: solid black 1px;
-  margin-bottom: 50px; }
+  .container-t .card-testimonios {
+    text-align: center;
+    padding: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: solid black 1px;
+    margin-bottom: 50px; }
 
 .card-testimonios:nth-of-type(2n) {
   background-image: linear-gradient(to left, black, grey, black); }
