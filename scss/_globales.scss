@@ -126,14 +126,19 @@ footer {
 
 /*RESPONSIVE*/
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: $pantalla-grande) {
     .row {
         display: flex;
         flex-direction: column;
     }
+    .astrologia {
+        display: flex;
+        flex-direction: column;
+        height: 95%;
+    }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: $pantalla-grande) {
     .card-tarot {
         margin-left: 90px;
         margin-right: 90px;
@@ -148,14 +153,6 @@ footer {
     }
 }
 
-@media screen and (max-width: 992px) {
-    .astrologia {
-        display: flex;
-        flex-direction: column;
-        height: 95%;
-    }
-}
-
 /*Libra. el signo del daño*/
 @media screen and (max-width: 245px) and (min-width: 0px) {
     .astrologiaLibra {
@@ -166,55 +163,33 @@ footer {
 @media screen and (max-width: 360px) and (min-width: 0px) {
     .contenedorALibra {
         min-height: 1000px;
-        /* width: 95%; */
-
     }
-}
-
-@media screen and (max-width: 360px) and (min-width: 0px) {
     .astrologiaLibra {
         min-height: 500px;
     }
-}
-
-@media screen and (max-width: 360px) and (min-width: 0px) {
     .contenedorA {
         min-height: 900px;
-        /* width: 95%; */
-
     }
-}
-
-/* Cards astrologia*/
-
-@media screen and (max-width: 360px) and (min-width: 0px) {
-    .contenedorA {
-        min-height: 1000px;
-        /* width: 95%; */
-
-    }
-}
-
-@media screen and (max-width: 360px) and (min-width: 0px) {
     .astrologia {
         min-height: 900px;
         margin-bottom: 80px;
-        /* width: 95%; */
     }
 }
+
+
+// @media screen and (max-width: 360px) and (min-width: 0px) {
+//     .contenedorA {
+//         min-height: 1000px;
+//     }
+// }
+
 
 @media screen and (max-width: 560px) and (min-width: 360px) {
     .contenedorA {
         min-height: 850px;
-        /* width: 95%; */
-
     }
-}
-
-@media screen and (max-width: 560px) and (min-width: 360px) {
     .astrologia {
         min-height: 850px;
         margin-bottom: 80px;
-        /* width: 95%; */
     }
 }
