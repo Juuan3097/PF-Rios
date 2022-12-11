@@ -11,6 +11,14 @@
     border: solid black 1px;
     margin-bottom: 50px;
   }
+
+  p{
+    color: white;
+  }
+
+  h3{
+    color: white;
+  }
 }
 
 
@@ -42,38 +50,32 @@
   .cero {
     grid-area: cero;
     height: 400px;
-    color: black;
   }
 
   .uno {
     grid-area: uno;
     height: 400px;
-    color: white;
   }
 
   .dos {
     grid-area: dos;
     height: 400px;
-    color: white;
   }
 
   .tres {
     grid-area: tres;
     height: 400px;
-    color: black;
 
   }
 
   .cuatro {
     grid-area: cuatro;
     height: 400px;
-    color: black;
   }
 
   .cinco {
     grid-area: cinco;
     height: 400px;
-    color: white;
   }
 
   .cards {

@@ -111,7 +111,9 @@ header {
     }
 }
 
-
+.astrologiaTexto {
+    text-align: left;
+}
 
 /*Footer*/
 footer {
@@ -154,28 +156,48 @@ footer {
 }
 
 /*Libra. el signo del daño*/
-@media screen and (max-width: 245px) and (min-width: 0px) {
-    .astrologiaLibra {
-        min-height: 1200px;
-    }
-}
+// @media screen and (max-width: 245px) and (min-width: 0px) {
+//     .astrologiaLibra {
+//         min-height: 2000px;
+//     }
+// }
 
-@media screen and (max-width: 360px) and (min-width: 0px) {
+@media screen and (min-width: 0px) and (max-width: 450px) {
     .contenedorALibra {
-        min-height: 1000px;
-    }
-    .astrologiaLibra {
-        min-height: 500px;
+        min-height: 1700px;
     }
     .contenedorA {
-        min-height: 900px;
-    }
-    .astrologia {
-        min-height: 900px;
-        margin-bottom: 80px;
+        min-height: 1400px;
     }
 }
 
+@media screen and (min-width: 450px) and (max-width: 628px) {
+    .contenedorALibra {
+        min-height: 1042px;
+    }
+    .contenedorA {
+        min-height: 850px;
+    }
+}
+
+@media screen and (min-width: 628px) and (max-width: $pantalla-grande) {
+    .contenedorALibra {
+        min-height: 800px;
+        height: 800px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .contenedorA {
+        min-height: 700px;
+    }
+}
+
+@media screen and (min-width: $pantalla-grande) {
+    .contenedorALibra {
+        margin-top: 80px;
+
+    }
+}
 
 // @media screen and (max-width: 360px) and (min-width: 0px) {
 //     .contenedorA {

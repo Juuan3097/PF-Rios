@@ -78,6 +78,9 @@ header {
     color: white;
     font-size: 13px; }
 
+.astrologiaTexto {
+  text-align: left; }
+
 /*Footer*/
 footer {
   height: 50px;
@@ -107,20 +110,30 @@ footer {
     flex-grow: unset; } }
 
 /*Libra. el signo del daño*/
-@media screen and (max-width: 245px) and (min-width: 0px) {
-  .astrologiaLibra {
-    min-height: 1200px; } }
-
-@media screen and (max-width: 360px) and (min-width: 0px) {
+@media screen and (min-width: 0px) and (max-width: 450px) {
   .contenedorALibra {
-    min-height: 1000px; }
-  .astrologiaLibra {
-    min-height: 500px; }
+    min-height: 1700px; }
   .contenedorA {
-    min-height: 900px; }
-  .astrologia {
-    min-height: 900px;
-    margin-bottom: 80px; } }
+    min-height: 1400px; } }
+
+@media screen and (min-width: 450px) and (max-width: 628px) {
+  .contenedorALibra {
+    min-height: 1042px; }
+  .contenedorA {
+    min-height: 850px; } }
+
+@media screen and (min-width: 628px) and (max-width: 992px) {
+  .contenedorALibra {
+    min-height: 800px;
+    height: 800px;
+    margin-top: 0px;
+    margin-bottom: 0px; }
+  .contenedorA {
+    min-height: 700px; } }
+
+@media screen and (min-width: 992px) {
+  .contenedorALibra {
+    margin-top: 80px; } }
 
 @media screen and (max-width: 560px) and (min-width: 360px) {
   .contenedorA {
@@ -143,7 +156,10 @@ footer {
   animation-name: rightToLeft;
   animation-duration: 0.5s;
   animation-timing-function: ease;
-  animation-iteration-count: 1; }
+  animation-iteration-count: 1;
+  margin-bottom: 60px;
+  text-shadow: 1px 1px 1px gray;
+  font-size: 1.5em; }
 
 @keyframes rightToLeft {
   0% {
@@ -169,14 +185,12 @@ main > div p {
   color: white;
   padding-left: 15px;
   padding-right: 15px;
-  text-align: center; }
+  text-align: center;
+  text-shadow: 1px 1px 1px gray;
+  font-size: 1.1em; }
 
 main > div h1 {
   margin-top: 150px; }
-
-h1 {
-  font-size: 1em;
-  margin-bottom: 60px; }
 
 /*Botones*/
 .contactanos {
@@ -259,9 +273,7 @@ h1 {
   height: 550px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 150px;
-  margin-bottom: 50px; }
+  align-items: center; }
 
 .astrologiaLibra {
   border: 1px solid gray;
@@ -349,6 +361,10 @@ h1 {
     margin-right: 50px;
     border: solid black 1px;
     margin-bottom: 50px; }
+  .container-t p {
+    color: white; }
+  .container-t h3 {
+    color: white; }
 
 .card-testimonios:nth-of-type(2n) {
   background-image: linear-gradient(to left, black, grey, black); }
@@ -366,27 +382,21 @@ h1 {
     grid-template-areas: "cero uno uno" "dos dos tres" "cuatro cinco cinco"; }
   .cero {
     grid-area: cero;
-    height: 400px;
-    color: black; }
+    height: 400px; }
   .uno {
     grid-area: uno;
-    height: 400px;
-    color: white; }
+    height: 400px; }
   .dos {
     grid-area: dos;
-    height: 400px;
-    color: white; }
+    height: 400px; }
   .tres {
     grid-area: tres;
-    height: 400px;
-    color: black; }
+    height: 400px; }
   .cuatro {
     grid-area: cuatro;
-    height: 400px;
-    color: black; }
+    height: 400px; }
   .cinco {
     grid-area: cinco;
-    height: 400px;
-    color: white; }
+    height: 400px; }
   .cards {
     margin-left: 88px; } }
